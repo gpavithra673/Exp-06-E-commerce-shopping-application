@@ -1,27 +1,28 @@
 # EXP 26: E-COMMERCE SHOPPING APPLICATION
 
 ## AIM:
- To create a E-commerce Shopping application using React,SpringBoot and SQL.
+ ###  To create a E-commerce Shopping application using React,SpringBoot and SQL.
 
  ## ALGORITHM:
 
- 1. Create a SpringBoot project with the required specifications.
+ ###  1. Create a SpringBoot project with the required specifications.
  
- 2. Set up the JDK environment and add the necessary java files.
+  ### 2. Set up the JDK environment and add the necessary java files.
  
- 3. Create a suitable database in PostgresSQL and connect it to your SpringBoot File
+  ### 3. Create a suitable database in PostgresSQL and connect it to your SpringBoot File
  
- 4. Create the User Interface using React and define the specific components.
+  ### 4. Create the User Interface using React and define the specific components.
  
- 5. Connect the front end to the back end.
+  ### 5. Connect the front end to the back end.
  
- 6. Run the project and make necessary changes as required.
+ ###  6. Run the project and make necessary changes as required.
 
  ## PROGRAM:
 
  ### SPRING BOOT:
 
  ### ECommerce.java:
+ ```
  java
 package com.example.saveetha.Shopping.ECom;
 import jakarta.persistence.*;
@@ -73,8 +74,9 @@ public class ECommerce {
 }
 
 
-
+```
 ### ECommerceController.java:
+```
 java
 package com.example.saveetha.Shopping.ECom;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -95,9 +97,10 @@ public class ECommerceController {
     public void deleteProduct(@PathVariable("id") Long productId){ eCommerceService.removeProduct(productId);}
 }
 
-
+```
 ### REACT CODES:
 ### App.js:
+```
 js
 import React from 'react';
 import './App.css';
@@ -129,9 +132,10 @@ function App() {
   );
 }
 export default App;
-
+```
 
 ### ProductDirectoryComponent.js:
+```
 js
 import React, { useEffect, useState } from 'react';
 import './ProductDirectoryComponent.css'; 
@@ -169,8 +173,9 @@ function ProductDirectoryComponent() {
 
 export default ProductDirectoryComponent;
 
-
+```
 ### ProductAddComponent.js:
+```
 js
 import React, { useState } from "react";
 import './ProductAddComponent.css'
@@ -231,8 +236,9 @@ function ProductAddComponent() {
 
 export default ProductAddComponent;
 
-
+```
 ### ProductDeletionComponent.js:
+```
 js
 import React, { useState } from 'react';
 import './ProductDeletionComponent.css'
@@ -277,9 +283,7 @@ function ProductDeletionComponent() {
 
 export default ProductDeletionComponent;
 
-
-
-
+```
 ## OUTPUT:
 ![image](https://github.com/Aashima02/ECommerce-Shopping-Application/assets/93427086/e2b0d5c8-85be-48e3-b8f5-feb9f50ff16c)
 
@@ -288,4 +292,4 @@ export default ProductDeletionComponent;
 
 
 ## RESULT:
-Thus, a E-commerce Shopping application is created using React, springboot and SQL.
+ ### Thus, a E-commerce Shopping application is created using React, springboot and SQL.
